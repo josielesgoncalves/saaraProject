@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="ISO-8859-1">
-		<title>Login</title>
-	</head>
-	
-	<body>
-		<form action="Login" method="post">
-		</form>		
-	</body>
-</html>
+  <html>
+    <head>      
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>      
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <div class="row">
+    <form class="col s12" action="Cadastro" method="post">
+     <div class="row">
+        <div class="input-field col s12">
+          <input id="email" name="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="senha" name="senha" type="password" class="validate">
+          <label for="password">Senha</label>
+        </div>
+      </div>           
+    </form>
+  </div>
+      
+    </body>
+  </html>
