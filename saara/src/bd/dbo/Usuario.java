@@ -1,14 +1,12 @@
 package bd.dbo;
 
 public class Usuario
-{
-	private String email;
+{	
 	private String nome;
+	private String email;
 	private String senha;
-	private int semestre;
-	private String curso;
 	
-	public Usuario (String email, String nome, String senha) throws Exception
+	public Usuario (String nome, String email, String senha) throws Exception
 	{
 		this.setEmail(email);
 		this.setNome(nome);
@@ -37,26 +35,6 @@ public class Usuario
 
 	public void setSenha(String senha) {
 		this.senha = senha;
-	}
-
-	public int getSemestre() {
-		return semestre;
-	}
-
-	public void setSemestre(int semestre) {
-		this.semestre = semestre;
-	}
-
-	public String getCurso() {
-		return curso;
-	}
-
-	public void setCurso(String curso) {
-		this.curso = curso;
-	}
-	 
-	 
-
-	 
+	}	 
 }
 
