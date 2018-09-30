@@ -19,7 +19,7 @@ public class BD {
 
 			String driverName = "com.mysql.jdbc.Driver";
 			String username = "root";
-			String password = "Jo$i220792";
+			String password = "senha";
 
 			comando = new MeuPreparedStatement(driverName, "jdbc:mysql://127.0.0.1:3306/projetod", username, password);
 
