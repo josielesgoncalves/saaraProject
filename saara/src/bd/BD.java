@@ -19,7 +19,13 @@ public class BD
 	        "com.microsoft.sqlserver.jdbc.SQLServerDriver",
 	        "jdbc:sqlserver://FS5:1433;databasename=poo201849",
 	        "poo201849", "Opkvs8");
-
+            /*
+            comando =
+            		new MeuPreparedStatement (
+            		"com.mysql.jdbc.Driver",
+            		"jdbc:mysql://localhost:3306/maligno",
+            		"root", "");
+			*/
 	    usuarios = new Usuarios ();
         }
         catch (Exception erro)
