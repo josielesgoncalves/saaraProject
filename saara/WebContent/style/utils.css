@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+html{
+	height: 100%;
+}
+body{
+    height: 100%;
+}
+
+#conteudoHeader{
+	width: 1000px;
+	height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#header{
+	position: fixed;
+	width: 100%;
+    top: 0px;
+}
+.containerSombreado{
+	border-radius: 5px;
+ 	-webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 24px 38px 3px rgba(0, 0, 	0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+#conteudoEsquerda{
+	min-height: 90%; /* //TODO mudar isso aqui quando tiver conteudo pra colocar */
+	width: 580px;
+    display: inline-block;
+}
+#conteudoDireita{
+	min-height: 90%;
+	margin-left: 15px;
+	width: 400px;
+    display: inline-block;
+}
+#containerCentral{
+	width: 1000px;
+	height: 100%;
+    margin: 60px auto 0px auto;
+}
+	
+.preencher{
+	width: 100%;
+	height: 100%;
+}
+.preencherHorizontal{
+	width: 100%;
+}
+.preencherVertical{
+	height: 100%;
+}
