@@ -3,38 +3,28 @@ package bd;
 import bd.core.*;
 import bd.daos.*;
 
-public class BD 
-{
-    public static final MeuPreparedStatement COMANDO;
-    public static final Usuarios Usuarios;
+public class BD {
+	public static final MeuPreparedStatement COMANDO;
+	public static final Usuarios Usuarios;
 
-    static
-    {
-        Usuarios usuarios  = null; 
-        MeuPreparedStatement comando = null;
-	    
-        try
-        {
-            comando = new MeuPreparedStatement (	            
-	        "com.microsoft.sqlserver.jdbc.SQLServerDriver",
-	        "jdbc:sqlserver://FS5:1433;databasename=poo201849",
-	        "poo201849", "Opkvs8");
-            /*
-            comando =
-            		new MeuPreparedStatement (
-            		"com.mysql.jdbc.Driver",
-            		"jdbc:mysql://localhost:3306/maligno",
-            		"root", "");
-			*/
-	    usuarios = new Usuarios ();
-        }
-        catch (Exception erro)
-        {
-        	System.err.println ("Problemas de conexao com o BD");
-	    	System.exit(0);
-        }
-        COMANDO = comando;
-        Usuarios  = usuarios;
+	static {
+		Usuarios usuarios = null;
+		MeuPreparedStatement comando = null;
+
+		try {
+			comando = new MeuPreparedStatement("com.microsoft.sqlserver.jdbc.SQLServerDriver",
+					"jdbc:sqlserver://FS5:1433;databasename=poo201849", "poo201849", "Opkvs8");
+			/*
+			 * comando = new MeuPreparedStatement ( "com.mysql.jdbc.Driver",
+			 * "jdbc:mysql://localhost:3306/maligno", "root", "");
+			 */
+			usuarios = new Usuarios();
+		} catch (Exception erro) {
+			System.err.println("Problemas de conexao com o BD");
+			System.exit(0);
+		}
+		COMANDO = comando;
+		Usuarios = usuarios;
 	}
-	
+
 }
