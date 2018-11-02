@@ -1,0 +1,23 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	template="../templates/template.xhtml">
+
+	<ui:define name="estilos">
+		<link type="text/css" rel="stylesheet" href="../style/home.css" media="screen,projection" />
+	</ui:define>
+	
+	<ui:define name="titulo">Saara - Home</ui:define>
+	<ui:define name="conteudoEsquerda">
+		<ui:repeat value="#{homeBean.listaTeste}" var="value">
+		    #{value} <br />
+		</ui:repeat>
+	</ui:define>
+	<ui:define name="conteudoDireita">
+		<ui:repeat value="#{homeBean.listaTeste}" var="value">
+		    #{value} <br />
+		</ui:repeat>
+	</ui:define>
+	
+</ui:composition>

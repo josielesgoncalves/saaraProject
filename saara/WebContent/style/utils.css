@@ -5,6 +5,7 @@ html{
 }
 body{
     height: 100%;
+    margin: 0px;
 }
 
 #conteudoHeader{
@@ -27,6 +28,7 @@ body{
 	min-height: 90%; /* //TODO mudar isso aqui quando tiver conteudo pra colocar */
 	width: 580px;
     display: inline-block;
+    float: left;
 }
 #conteudoDireita{
 	min-height: 90%;
@@ -36,8 +38,9 @@ body{
 }
 #containerCentral{
 	width: 1000px;
-	height: 100%;
-    margin: 60px auto 0px auto;
+	height: calc(100% - 60px);
+    margin: 0px auto 0px auto;
+  	padding-top: 60px;
 }
 	
 .preencher{
