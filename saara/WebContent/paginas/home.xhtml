@@ -10,14 +10,48 @@
 	
 	<ui:define name="titulo">Saara - Home</ui:define>
 	<ui:define name="conteudoEsquerda">
-		<ui:repeat value="#{homeBean.listaTeste}" var="value">
-		    #{value} <br />
-		</ui:repeat>
+		<div id="containerFlexCirculos">
+			<ui:repeat value="#{homeBean.listaTeste}" var="value">
+				
+					<div class="circulo">
+				    	
+				    </div>
+				
+			</ui:repeat>
+		</div>
 	</ui:define>
 	<ui:define name="conteudoDireita">
-		<ui:repeat value="#{homeBean.listaTeste}" var="value">
-		    #{value} <br />
-		</ui:repeat>
+		<div id="containerProgressos">
+			<LABEL>Progressos:</LABEL>
+			<ui:repeat value="#{homeBean.listaTeste}" var="value">
+			    <p:progressBar value="50" labelTemplate="#{value} - {value}%" displayOnly="true" styleClass="animated"/>
+			</ui:repeat>
+		</div>
+		
+		<div id="containerProximasAtividades">
+		
+			<LABEL>Próximas Atividades:</LABEL>
+			<ui:repeat value="#{homeBean.listaTeste}" var="value">
+			    <h:panelGrid columns="2" style="width:100%" columnClasses="logo,detail">
+		            <i class="material-icons">assignment</i>
+		            <p:outputPanel>
+		                <h:panelGrid columns="2">
+		                    <h:outputText value="Id:" />
+		                    <h:outputText value="1" style="font-weight: bold"/>
+		 
+		                    <h:outputText value="Year:" />
+		                    <h:outputText value="123123123123123123123123" style="font-weight: bold"/>
+		 
+		                    <h:outputText value="Color:" />
+		                    <h:outputText value="asd" style="font-weight: bold"/>
+		                </h:panelGrid>
+		            </p:outputPanel>
+		        </h:panelGrid>
+				
+			</ui:repeat>
+			
+			
+		</div>
 	</ui:define>
 	
 </ui:composition>
