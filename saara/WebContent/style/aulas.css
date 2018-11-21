@@ -1,3 +1,6 @@
+#conteudoEsquerda .collection{
+	margin: unset;
+}
 #menuItemAulas
 {
 	background-color: #778877;
