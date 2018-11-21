@@ -1,6 +1,17 @@
+tr.balaoRowAtividade{
+	border:none !important;
+	border-radius:5px;
+	cursor:pointer;
+}
+.tituloCirculo
+{
+	
+}
 #menuItemHome
 {
-	background-color: red;
+	background-color: #778877;
+    color: #eeffee;
+    background: linear-gradient(#99a699,#778877);
 }
 
 .circulo
@@ -11,11 +22,11 @@
     height: 100px;
     margin: 20px 50px;
 }
-.circulo:hover
-{
-	box-shadow: 5px 8px 33px -9px;
-	cursor: pointer;
-}
+/* .circulo:hover */
+/* { */
+/* 	box-shadow: 5px 8px 33px -9px; */
+/* 	cursor: pointer; */
+/* } */
 #containerFlexCirculos
 {
     display: flex;
