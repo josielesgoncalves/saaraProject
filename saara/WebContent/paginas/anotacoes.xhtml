@@ -12,10 +12,42 @@
 	<ui:define name="titulo">Saara - Atividades</ui:define>
 	
 	<ui:define name="conteudoEsquerda">
-		COnteudo atividades 1
+		<div class="row">
+	    	<div class="col s12">
+	      		<ul class="tabs">
+		        	<li class="tab col s6"><a href="#abaTodas">Todas</a></li>
+		        	<li class="tab col s6"><a class="active" href="#abaMaterias">Por Matéria</a></li>
+		      	</ul>
+		    </div>
+		    <div id="abaTodas" class="col s12">		    
+			     <div class="input-field col s12">
+		          <textarea placeHolder="Texto de anotação" id="textAreaTodas" class="materialize-textarea"></textarea>
+		          
+		        </div>        
+		    </div>
+		    <div id="abaMaterias" class="col s12">		    
+			     <div class="input-field col s12">
+		          <textarea placeHolder="Texto de anotação" id="textAreaAulas" class="materialize-textarea"></textarea>
+		          
+		        </div> 
+	        </div>
+		  </div>
 	</ui:define>
 	<ui:define name="conteudoDireita">
-		COnteudo atividades 2
+		<div class="row">
+			<div class="col s12">
+				<label>Aulas:</label>
+				<a class="waves-effect waves-light btn-small right  modal-trigger" href="#modalAdicionarAula"><i class="material-icons left">add</i>Adicionar</a>
+			</div>
+			<div class="col s12">
+				<div class="collection">
+	        		<a href="#!" class="collection-item">Aula1</a>
+			        <a href="#!" class="collection-item active">Aula2</a>
+			        <a href="#!" class="collection-item">Aula3</a>
+			        <a href="#!" class="collection-item">Aula4</a>
+		      	</div>
+			</div>
+		</div>
 	</ui:define>
 	
 </ui:composition>
